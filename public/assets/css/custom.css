@@ -1,0 +1,264 @@
+/* ---------------------------------
+8. EDUCATION SECTION
+--------------------------------- */
+
+.education-wrapper {
+  position: relative;
+}
+
+.edited-education {
+  background: #f8faff;
+}
+
+.education-wrapper:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: -51px;
+  width: 2px;
+  background: #ccc;
+}
+
+.education-wrapper .education {
+  position: relative;
+}
+
+.education-wrapper .education:after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -58px;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: 0 0 0 8px rgba(204, 0, 231, 0.52);
+  background: #7b0fc3e5;
+}
+
+/* ---------------------------------
+3. HEADER
+--------------------------------- */
+
+header {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+header .heading-wrapper {
+  border-radius: 5px;
+  padding: 20px 40px 15px;
+  background: #6837ca6b;
+  color: #fff !important;
+}
+
+header .info {
+  margin-bottom: 10px;
+}
+
+header .info .icon {
+  float: left;
+  font-size: 30px;
+}
+
+header .info .right-area {
+  margin-left: 45px;
+}
+
+/* ---------------------------------
+*/
+.intro-section {
+  padding-top: 200px;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../../images/slider-1-1920x1080.jpg);
+}
+
+.intro-section:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.intro-section:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  z-index: -1;
+  background: #fff;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 53%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 53%);
+}
+
+/* ---------------------------------
+4. INTRO SECTION
+--------------------------------- */
+
+.intro-section {
+  padding-top: 200px;
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+  background-image: url(../../assets/slider-1-1920x1080.jpg);
+}
+
+.intro-section:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.intro-section:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  z-index: -1;
+  background: #fff;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 53%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 50% 53%);
+}
+
+.intro {
+  padding: 0 20px;
+  margin-top: 100px;
+  text-align: center;
+  background: #fff;
+}
+
+.intro .profile-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: -100px;
+  margin-bottom: -70px;
+}
+
+.intro .information > li {
+  display: block;
+  margin: 5px 0;
+}
+
+.intro .social-icons > li > a {
+  height: 35px;
+  line-height: 35px;
+  width: 35px;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  margin: 0 5px 5px;
+  background: #887392;
+  color: #fff;
+}
+
+.intro .social-icons > li > a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 20px;
+  background: #ffa804;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.intro .social-icons > li > a:hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* ---------------------------------
+6. ABOUT SECTION
+--------------------------------- */
+
+.radial-progress {
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.radial-progress .progressbar-text {
+  font-size: 2.2em;
+  font-weight: 500;
+  padding-bottom: 25px !important;
+  color: #333 !important;
+}
+
+.radial-progress .progressbar-text:after {
+  content: "%";
+}
+
+.radial-progress .progress-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  transform: translate(-50%, 15px);
+  color: #777;
+}
+
+/* RADIAL PREOGRESS SECTION */
+
+.radial-progress {
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.radial-progress .progressbar-text {
+  font-size: 2.2em;
+  font-weight: 500;
+  padding-bottom: 25px !important;
+  color: #333 !important;
+}
+
+.radial-progress .progressbar-text:after {
+  content: "%";
+}
+
+.radial-progress .progress-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  transform: translate(-50%, 15px);
+  color: #777;
+}
+
+/* eited features */
+.custom-text-primary {
+  color: #6c46c8;
+}
