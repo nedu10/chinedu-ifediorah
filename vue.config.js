@@ -8,6 +8,10 @@ pwaArgs = {
 
 module.exports = {
   lintOnSave: false,
+  pwa: {
+    themeColor: "#ab2db4",
+    "msapplication-TileColor": "#000"
+  },
   configureWebpack: {
     entry: ["babel-polyfill", "whatwg-fetch", "./src/main.js"]
   },
