@@ -9,7 +9,7 @@ pwaArgs = {
 module.exports = {
   lintOnSave: false,
   pwa: {
-    themeColor: "#ab2db4",
+    themeColor: "#ba00db",
     "msapplication-TileColor": "#000"
   },
   configureWebpack: {
