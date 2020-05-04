@@ -91,37 +91,37 @@ export default {
           title: "html_vue",
           src: "/portfolio/html_vue.png",
           name: "MyRealPast Dashboard",
-          tech: "Html, Css and VueJs"
+          tech: "Html, Css and VueJs",
         },
         {
           title: "html",
           src: "/portfolio/html.png",
           name: "Kasuwa",
-          tech: "Html, Css"
+          tech: "Html, Css",
         },
         {
           title: "html",
           src: "/portfolio/html2.png",
           name: "Kasuwa Product",
-          tech: "Html, Css and VueJs"
+          tech: "Html, Css and VueJs",
         },
         {
           title: "node_vue",
           src: "/portfolio/node_vue.png",
           name: "Project-pos Dashboard",
-          tech: "NodeJs and VueJs"
+          tech: "NodeJs and VueJs",
         },
         {
           title: "node_vue",
           src: "/portfolio/node_vue2.png",
           name: "Project-pos Product",
-          tech: "NodeJs and VueJs"
+          tech: "NodeJs and VueJs",
         },
         {
           title: "node",
           src: "/portfolio/node.png",
           name: "Project-pos Product",
-          tech: "NodeJs and VueJs"
+          tech: "NodeJs and VueJs",
         },
         // {
         //   title: "vue",
@@ -138,30 +138,30 @@ export default {
         {
           title: "brandoc",
           src: "/portfolio/brandoc.jpg",
-          name: "Designs"
+          name: "Designs",
         },
         {
           title: "brandoc",
           src: "/portfolio/brandoc1.jpg",
-          name: "Designs"
+          name: "Designs",
         },
         {
           title: "brandoc",
           src: "/portfolio/brandoc2.jpg",
-          name: "Designs"
+          name: "Designs",
         },
         {
           title: "brandoc",
           src: "/portfolio/brandoc3.jpg",
-          name: "Designs"
+          name: "Designs",
         },
         {
           title: "brandoc",
           src: "/portfolio/brandoc4.jpg",
-          name: "Designs"
-        }
+          name: "Designs",
+        },
       ],
-      new_portfolio_data: []
+      new_portfolio_data: [],
     };
   },
   computed: {
@@ -173,14 +173,14 @@ export default {
       } else {
         return null;
       }
-    }
+    },
   },
   methods: {
     select_portfolio(params) {
       this.new_portfolio_data = [];
       if (params) {
         this.active_key = params;
-        this.porfolio_data.forEach(each => {
+        this.porfolio_data.forEach((each) => {
           let get_arr = each.title.split("_");
           if (get_arr.indexOf(params) != -1) {
             this.new_portfolio_data.push(each);
@@ -189,18 +189,18 @@ export default {
         });
       } else {
         console.log("meee");
-        this.porfolio_data.forEach(each => {
+        this.porfolio_data.forEach((each) => {
           console.log("ee >> ", each.title != "brandoc");
-          if (each.title != "brandoc") {
-            this.new_portfolio_data.push(each);
-          }
+          // if (each.title != "brandoc") {
+          this.new_portfolio_data.push(each);
+          // }
           return true;
         });
       }
-    }
+    },
   },
   mounted() {
     this.select_portfolio();
-  }
+  },
 };
 </script>
